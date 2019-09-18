@@ -30,7 +30,6 @@ import com.guichaguri.trackplayer.service.metadata.MetadataManager;
 import com.guichaguri.trackplayer.service.models.Track;
 import com.guichaguri.trackplayer.service.player.ExoPlayback;
 import com.guichaguri.trackplayer.service.player.LocalPlayback;
-
 import static com.google.android.exoplayer2.DefaultLoadControl.*;
 
 /**

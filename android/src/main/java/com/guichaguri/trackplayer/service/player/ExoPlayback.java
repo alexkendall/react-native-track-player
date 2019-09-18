@@ -9,8 +9,6 @@ import com.google.android.exoplayer2.Player.EventListener;
 import com.google.android.exoplayer2.Timeline.Window;
 import com.google.android.exoplayer2.metadata.Metadata;
 import com.google.android.exoplayer2.metadata.MetadataOutput;
-import com.google.android.exoplayer2.metadata.icy.IcyHeaders;
-import com.google.android.exoplayer2.metadata.icy.IcyInfo;
 import com.google.android.exoplayer2.metadata.id3.TextInformationFrame;
 import com.google.android.exoplayer2.metadata.id3.UrlLinkFrame;
 import com.google.android.exoplayer2.source.TrackGroup;
@@ -46,8 +44,11 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
         this.manager = manager;
         this.player = player;
 
+        /*
         Player.MetadataComponent component = player.getMetadataComponent();
         if(component != null) component.addMetadataOutput(this);
+
+         */
     }
 
     public void initialize() {
@@ -383,6 +384,7 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
     }
 
     private void handleIcyMetadata(Metadata metadata) {
+        /*
         for (int i = 0; i < metadata.length(); i++) {
             Metadata.Entry entry = metadata.get(i);
 
@@ -411,6 +413,7 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
 
             }
         }
+         */
     }
 
     @Override
